@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 var index = require('./routes/index');
 
-app.use('/api/transit', index);
+app.use('/', index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
