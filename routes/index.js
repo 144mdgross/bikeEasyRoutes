@@ -35,6 +35,6 @@ router.get('/:city', (req, res, next) => {
   // so that means 2 queries.
   // what will I send back? >> the lat, lng as a formatted string
   //
-});
+// });
 
 module.exports = router;
