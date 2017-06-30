@@ -1,17 +1,14 @@
+'use strict'
+
 var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-
-var index = require('./routes/index');
-
 var app = express();
+var logger = require('morgan');
+var bodyParser = require('body-parser');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+
+var index = require('./routes/index');
 
 app.use('/api/transit', index);
 
@@ -30,7 +27,9 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.send(err);
 });
 
 module.exports = app;
+
+// "{"depart": "Denver", "arrive": "Boulder"}"
