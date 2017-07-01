@@ -18,7 +18,15 @@ exports.seed = function(knex, Promise) {
           bus_short_name: 'FF1',
           lat: 40.0167794617209,
           lng: -105.2763760730073
-        }
+        },
+        {
+          id: 3,
+          city: 'Longmont',
+          bus_stop: '8th and Coffman PnR',
+          bus_short_name: 'BOLT',
+          lat: 40.17129049696524,
+          lng: -105.1039429055125
+        }    
       ]);
     });
 };
