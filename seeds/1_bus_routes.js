@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
           lng: -105.1039429055125
         },
         id: 4,
-        city: 'Lousiville',
+        city: 'Louisville',
         bus_stop: 'Main & Spruce',
         bus_short_name: 'DASH',
         lat: 39.97724933775161,
