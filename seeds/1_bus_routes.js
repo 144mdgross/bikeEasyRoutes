@@ -26,23 +26,13 @@ exports.seed = function(knex, Promise) {
           bus_short_name: 'BOLT',
           lat: 40.17129049696524,
           lng: -105.1039429055125
-        }    
+        },
+        id: 4,
+        city: 'Lousiville',
+        bus_stop: 'Main & Spruce',
+        bus_short_name: 'DASH',
+        lat: 39.97724933775161,
+        lng: -105.1321947919903
       ]);
     });
 };
-
-// Longmont 8th &amp; Coffman PnR Gate B
-// 40.17129049696524
-// -105.1039429055125
-
-// FLEX longmont to Foco 8th and Coffman
-// 40.17234240395998
-// -105.103830010078
-
-// Union Station Bus Terminal
-// 39.75393195238262
-// -105.001159562932
-
-//Boulder Transit Center
-//40.0167794617209
-//-105.2763760730073
